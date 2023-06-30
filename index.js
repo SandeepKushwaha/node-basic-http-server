@@ -37,6 +37,11 @@ function requestHandler(req, res) {
 
         return res.end(data);
     });
+
+    // install nodemon (npm install -g nodemon) and
+    // start the server with (nodemon index.js) for
+    // auto change js and restart the server.
+    // NOTE: nodemon watches only file with extension: js, mjs, json
 }
 
 // setting request handler on createServer 
@@ -48,5 +53,6 @@ server.listen(port, function (err) {
         return;
     }
 
-    console.log("Server is up and running on port: ", port);
+    // console.log("Server is up and running on port: ", port);
+    console.log("Server is running on port:", port);
 });
